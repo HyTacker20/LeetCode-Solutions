@@ -1,9 +1,6 @@
 # LeetCode Solutions Repository
 
-![](https://badges.peiyuan.ch/leetcode/HyTacker20/solved)
-![](https://badges.peiyuan.ch/leetcode/HyTacker20/solved?difficulty=easy)
-![](https://badges.peiyuan.ch/leetcode/HyTacker20/solved?difficulty=medium)
-![](https://badges.peiyuan.ch/leetcode/HyTacker20/solved?difficulty=hard)
+![LeetCode Stats](https://leetcode.card.workers.dev/HyTacker20?theme=nord&font=baloo&extension=null)
 
 Welcome to my LeetCode solutions repository! Here, you'll find my solutions to various LeetCode problems. I've organized the solutions by categories and provided clear explanations for each problem's approach.
 
