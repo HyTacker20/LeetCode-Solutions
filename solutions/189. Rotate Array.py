@@ -1,12 +1,22 @@
-books = ["01001001", "01001002", "01002001", "01002002", "01002003", "02001001", "02001002", "02001003"]
+from typing import List
 
 
-def filterBible(scripture, book, chapter):
-    result = []
-    for b in scripture:
-        if b[:2] != book and b[2:5] != chapter:
-            scripture.remove(b)
-    return scripture
+class Solution:
+    def rotate(self, nums: List[int], k: int) -> list[int]:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        k = k % len(nums)
+        nums[:] = nums[-k:] + nums[:-k]
+        return nums
 
-
-print(filterBible(books, '01', '001'))
+if __name__ == '__main__':
+    solution = Solution()
+    # print(solution.rotate([1, 2, 3, 4, 5, 6, 7], 1))
+    # print(solution.rotate([1, 2, 3, 4, 5, 6, 7], 2))
+    print(solution.rotate([1, 2, 3, 4, 5, 6, 7], 3))
+    # print(solution.rotate([1, 2, 3, 4, 5, 6, 7], 4))
+    # print(solution.rotate([1, 2, 3, 4, 5, 6, 7], 5))
+    # print(solution.rotate([1, 2, 3, 4, 5, 6, 7], 6))
+    # print(solution.rotate([1, 2, 3, 4, 5, 6, 7], 7))
+    # print(solution.rotate([1, 2, 3, 4, 5, 6, 7], 8))
